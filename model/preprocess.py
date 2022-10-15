@@ -18,6 +18,10 @@ data = args.input
 out_path = args.output
 
 def main():
+    '''
+    Applies preprocessing to the data 
+    and handles imbalance problem
+    '''
     if data[-3:]=='zip':
         df = pd.read_csv(data,
                     compression='zip',low_memory=False)
@@ -51,7 +55,7 @@ def main():
         
     df.label.plot(kind='hist', title='labels distribution')
 
-    if imbalance = True:
+    if imbalance == True:
         train_df, rest = train_test_split(df, random_state=42, train_size=0.80, stratify=df.label.values) # 80% train
         valid_df, test_df = train_test_split(rest, random_state=42, train_size=0.50, stratify=rest.label.values)
 
@@ -68,7 +72,7 @@ def main():
         test_path = out_path + 'testt.csv'
 
     print('Train: ', train_df.shape)
-    print('Valid: 'valid_df.shape)
+    print('Valid: ',valid_df.shape)
     print('Test: ', test_df.shape)
 
     train_df.to_csv (train_path, index = False, header=True)
