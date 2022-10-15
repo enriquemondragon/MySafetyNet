@@ -18,7 +18,7 @@ The preprocessed step can be done with the script:
 
 ```
 
-Training can be done using the script:
+Training and post conversion/quantization processing can be done using the script:
 ```
     $ python3 training.py --train train/data \
     --valid valid/data --test test/data --model {NLP_model} \

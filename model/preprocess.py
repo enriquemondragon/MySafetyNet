@@ -9,7 +9,7 @@ import tensorflow as tf
 from sklearn.model_selection import train_test_split
 from tflite_model_maker import model_spec
 
-parser = argparse.ArgumentParser(description=' ################ sAIftNet: Preprocessing data ################', usage='%(prog)s')
+parser = argparse.ArgumentParser(description=' ################ MySafetyNet: Preprocessing data ################', usage='%(prog)s')
 parser.add_argument('-in', '--input', type=str, required=True, help='Input csv file containing the data', dest='input')
 parser.add_argument('-out', '--output', type=str, required=True, help='Output path for saving the data', dest='output')
 

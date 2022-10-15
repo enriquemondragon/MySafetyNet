@@ -8,7 +8,7 @@ from tflite_model_maker.text_classifier import DataLoader
 from tflite_support import metadata as _metadata
 import argparse
 
-parser = argparse.ArgumentParser(description=' ################ sAIftNet: Model training ################', usage='%(prog)s')
+parser = argparse.ArgumentParser(description=' ################ MySafetyNet: Model training ################', usage='%(prog)s')
 parser.add_argument('-tr', '--train', type=str, required=True, help='Input csv file containing the training data', dest='train')
 parser.add_argument('-va', '--valid', type=str, help='Input csv file containing the validation ata', dest='valid')
 parser.add_argument('-te', '--test', type=str, help='Input csv file containing the testing data', dest='test')

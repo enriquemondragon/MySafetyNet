@@ -1,4 +1,4 @@
-# sAIftyNet
+# MySafetyNet
 
 ## HackHarvard Project
 
@@ -10,11 +10,11 @@
 | Enrique | |
 | Erick | |
 
-### About sAIftyNet
-sAIftyNet is an app that help you express your feelings and keeps track of your daily mood, with the objective to make you feel better and opens yourself to receive any help if needed. It can also be used by psychologist or psychiatrist to get a better record on their patients.
+### About MySafetyNet
+MySafetyNet is an app that help you express your feelings and keeps track of your daily mood, with the objective to make you feel better and opens yourself to receive any help if needed. It can also be used by psychologist or psychiatrist to get a better record on their patients.
 
 ### Technologies applied
-sAIftyNet uses natural language processing based on sentiment analysis to help translate your answers into data that we can analyze and track. Using Tensorflow, we were able to import the wide known natural language model BERT in its mobile version, and proceeded to perform transfer learning with a database ready to perform sentiment analysis. This model was later implemented in an iOS app using XCode.
+MySafetyNet uses natural language processing based on sentiment analysis to help translate your answers into data that we can analyze and track. Using Tensorflow, we were able to import the wide known natural language model BERT in its mobile version, and proceeded to perform transfer learning with a database ready to perform sentiment analysis. This model was later implemented in an iOS app using XCode.
 
 ### Sources
 Since this is a delicate topic and we dont have much time for research, we found the Diagnostic and Statistical Manual of Mental Disorders (DSM-5), where we could information from the Amarican Psychiatric Association and questions made in real cases which help to make a diagnosis. 
