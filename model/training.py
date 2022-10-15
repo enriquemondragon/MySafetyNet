@@ -1,9 +1,11 @@
 
 from this import d
+import os
 import tensorflow as tf
 from tflite_model_maker import model_spec
 from tflite_model_maker import text_classifier
 from tflite_model_maker.text_classifier import DataLoader
+from tflite_support import metadata as _metadata
 import argparse
 
 parser = argparse.ArgumentParser(description=' ################ sAIftNet: Model training ################', usage='%(prog)s')
@@ -67,6 +69,21 @@ def main():
     
     # Save
     model.export(export_dir=out_path)
+
+    # TFLite model evaluation
+    accuracy = model.evaluate_tflite('/content/mobilebert/model.tflite', test_data)
+    print('TFLite model accuracy: ', accuracy)
+
+    # Export metadata
+    export_model_path='/content/mobilebert/model.tflite'
+    displayer = _metadata.MetadataDisplayer.with_model_file(export_model_path)
+    print(displayer)
+    export_json_file = os.path.join('/content/mobilebert/model.json')
+    json_file = displayer.get_metadata_json()
+    print(json_file)
+
+    with open(export_json_file, "w") as f:
+      f.write(json_file)
 
 
 if __name__ == "__main__":
