@@ -1,4 +1,4 @@
-# NLP / Sentiment Analysis Model
+# Sentiment Analysis - NLP Model
 
 In this section all the scripts, datasets and models related to the NLP model can be found.
 
@@ -18,7 +18,7 @@ The preprocessed step can be done with the script:
 
 ```
 
-Training and post conversion/quantization processing can be done using the script:
+Model training, quantization and conversion can be done using the script:
 ```
     $ python3 training.py --train train/data \
     --valid valid/data --test test/data --model {NLP_model} \
