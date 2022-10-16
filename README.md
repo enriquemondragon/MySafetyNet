@@ -1,15 +1,7 @@
 # MySafetyNet
 
-## HackHarvard Project
-
-### Development team
-| Name | Email |
-| ---- | ----- |
-| Abraham | |
-| Ankush | |
-| Enrique | |
-| Erick | |
-
+## HackHarvard 2022 Project
+![MySafetyNetLogo](/images/icon_MySafetyNet.jpg)
 ### About MySafetyNet
 MySafetyNet is an app that help you express your feelings and keeps track of your daily mood, with the objective to make you feel better and opens yourself to receive any help if needed. It can also be used by psychologist or psychiatrist to get a better record on their patients.
 
@@ -21,3 +13,11 @@ Since this is a delicate topic and we dont have much time for research, we found
 
 ### Future Work
 Since this is a very short-time proyect and its touching critical aspects of people's life and health, we would like to review the questions asked, as well as the analysis done from the answers, which require both medical supervission and better learning methods that can decide how to assess the person in a more sensible way.
+
+### Development team
+| Name | Email |
+| ---- | ----- |
+| Abraham | |
+| Ankush | |
+| Enrique | |
+| Erick | |
