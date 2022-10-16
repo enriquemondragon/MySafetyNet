@@ -20,7 +20,7 @@ Since this is a very short-time proyect and its touching critical aspects of peo
 ### Development team
 | Name | Email |
 | ---- | ----- |
-| Abraham | |
-| Ankush | |
+| Abraham Collins | A01283166@tec.mx |
+| Ankush Kesri | ankushkesri@gmail.com |
 | Enrique Mondragon | emondra99@gmail.com |
-| Erick | A01383577@tec.mx |
+| Erick Cuellar | A01383577@tec.mx |
