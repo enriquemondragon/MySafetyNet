@@ -26,8 +26,9 @@ class ViewController: UIViewController {
 
     func loadModel() {
         
+        //modifed model
         guard let bertModelPath = Bundle.main.path(
-          forResource: "model_101522_0848", ofType: "tflite") else { return }
+          forResource: "model", ofType: "tflite") else { return }
         
         self.classifier = TFLBertNLClassifier.bertNLClassifier(
               modelPath: bertModelPath)
