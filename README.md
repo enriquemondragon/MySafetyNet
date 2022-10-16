@@ -23,4 +23,4 @@ Since this is a very short-time proyect and its touching critical aspects of peo
 | Abraham | |
 | Ankush | |
 | Enrique | |
-| Erick | |
+| Erick | A01383577@tec.mx |
