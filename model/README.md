@@ -2,7 +2,7 @@
 
 In this section all the scripts, datasets and models related to the NLP model can be found.
 
-We implement the workflow for both a local Unix machine and with a Google Colab Virtual Machine (VM). If you are interested in working with a Google Colab VM you can follow [this jupyter notebook](https://github.com/enriquemondragon/sAIftyNet/blob/main/model/dataprep_train_test.ipynb).
+We implement the workflow for both a local Unix machine and with a Google Colab Virtual Machine (VM). If you are interested in working with a Google Colab VM you can follow [this jupyter notebook](https://github.com/enriquemondragon/MySafetyNet/blob/main/model/dataprep_train_test.ipynb).
 
 If you wish to run it locally you can create a virtual environment and install the requirements:
 ```
