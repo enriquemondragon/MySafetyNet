@@ -1,7 +1,8 @@
 # MySafetyNet
 
 ## HackHarvard 2022 Project
-![MySafetyNetLogo](/images/icon_MySafetyNet.jpg)
+<img src="https://live.staticflickr.com/65535/52430871329_168339da3a_z.jpg" width=50% height=50%>
+
 ### About MySafetyNet
 MySafetyNet is an app that help you express your feelings and keeps track of your daily mood, with the objective to make you feel better and opens yourself to receive any help if needed. It can also be used by psychologist or psychiatrist to get a better record on their patients.
 
