@@ -21,6 +21,6 @@ Since this is a very short-time proyect and its touching critical aspects of peo
 | Name | Email |
 | ---- | ----- |
 | Abraham Collins | A01283166@tec.mx |
-| Ankush Kesri | ankushkesri@gmail.com |
-| Enrique Mondragon | emondra99@gmail.com |
+| Ankush Kesri | kesri.a@northeastern.edu |
+| Enrique Mondragon | A01366000@tec.com |
 | Erick Cuellar | A01383577@tec.mx |
