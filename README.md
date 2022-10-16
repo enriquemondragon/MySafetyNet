@@ -22,5 +22,5 @@ Since this is a very short-time proyect and its touching critical aspects of peo
 | ---- | ----- |
 | Abraham | |
 | Ankush | |
-| Enrique | |
+| Enrique Mondragon | emondra99@gmail.com |
 | Erick | A01383577@tec.mx |
