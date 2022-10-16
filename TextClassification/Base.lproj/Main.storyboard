@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5Te-6s-IQ2">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
@@ -10,26 +10,28 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tell me more about your day-->
+        <!--Hi! How was your day?-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TFL_TextClassification" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MySafetyNet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Classify text" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nZM-FA-Zjl">
-                                <rect key="frame" x="8" y="836" width="336" height="34"/>
+                                <rect key="frame" x="8" y="641" width="297" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pUW-WU-S9u">
-                                <rect key="frame" x="0.0" y="92" width="414" height="736"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="589"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8rU-8g-wT5">
-                                <rect key="frame" x="352" y="836" width="54" height="34"/>
-                                <state key="normal" title="Classify"/>
+                                <rect key="frame" x="313" y="641" width="54" height="34"/>
+                                <state key="normal" title="Classify">
+                                    <color key="titleColor" red="0.58039218189999997" green="0.66666668650000005" blue="0.85098040100000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                                 <connections>
                                     <action selector="tapClassify:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Yf-qU-uwF"/>
                                 </connections>
@@ -50,7 +52,7 @@
                             <constraint firstItem="8rU-8g-wT5" firstAttribute="bottom" secondItem="nZM-FA-Zjl" secondAttribute="bottom" id="xZS-UQ-3Bm"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Tell me more about your day" id="oaa-bg-hKo"/>
+                    <navigationItem key="navigationItem" title="Hi! How was your day?" id="oaa-bg-hKo"/>
                     <connections>
                         <outlet property="tableView" destination="pUW-WU-S9u" id="yBB-Od-M0K"/>
                         <outlet property="textField" destination="nZM-FA-Zjl" id="2AA-GC-miW"/>
@@ -61,39 +63,27 @@
             </objects>
             <point key="canvasLocation" x="4449" y="139"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="gSB-fK-87g">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RPB-y3-xT7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FY1-QU-hgX" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="c5o-X8-QDu">
-                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                </navigationController>
-            </objects>
-            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
-        </scene>
-        <!--View Controller-->
+        <!--QuestionsV Controller-->
         <scene sceneID="Nrg-nb-3UU">
             <objects>
-                <viewController id="OiN-qq-5RC" sceneMemberID="viewController">
+                <viewController id="OiN-qq-5RC" customClass="QuestionsVController" customModule="MySafetyNet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gSB-4H-EPA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ls9-wu-sLB">
-                                <rect key="frame" x="327" y="800" width="60" height="35"/>
+                                <rect key="frame" x="288" y="605" width="60" height="35"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Next"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Next">
+                                    <color key="baseForegroundColor" red="0.58039218189999997" green="0.66666668650000005" blue="0.85098040100000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
                                 <connections>
+                                    <action selector="SaveAnswers:" destination="OiN-qq-5RC" eventType="touchUpInside" id="jsd-b1-obo"/>
                                     <segue destination="BYZ-38-t0r" kind="show" id="fgF-gL-35O"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KLx-EF-J97">
-                                <rect key="frame" x="11" y="218" width="132" height="30"/>
+                                <rect key="frame" x="16" y="180" width="132" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <menu key="menu" id="unY-Sn-vA9">
                                     <children>
@@ -104,45 +94,40 @@
                                         <command title="5: Don't relate" id="vxX-7A-jzr"/>
                                     </children>
                                 </menu>
-                                <state key="normal" title="Answer"/>
+                                <state key="normal" title="Answer">
+                                    <color key="titleColor" red="0.58039218189999997" green="0.66666668650000005" blue="0.85098040100000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I've had little interest in doing things" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T9V-nI-rcF">
-                                <rect key="frame" x="20" y="189" width="274" height="21"/>
+                                <rect key="frame" x="25" y="151" width="274" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="From 1 to 5, how much to you relate to the following sentences:" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LpE-jg-kaO">
-                                <rect key="frame" x="16" y="100" width="346" height="55"/>
+                                <rect key="frame" x="21" y="62" width="346" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yiK-NR-iTM">
-                                <rect key="frame" x="11" y="313" width="132" height="30"/>
+                                <rect key="frame" x="16" y="275" width="132" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <menu key="menu" id="SZP-ub-O9Y">
-                                    <children>
-                                        <command title="1: Strongly relate" id="o7O-fe-vGl"/>
-                                        <command title="2: Moderately relate" id="630-f9-gX9"/>
-                                        <command title="3: Mildly relate" id="dqS-ox-71o"/>
-                                        <command title="4: Slightly relate" id="RyD-b8-e3R"/>
-                                        <command title="5: Don't relate" id="a1k-PQ-BHU"/>
-                                    </children>
-                                </menu>
-                                <state key="normal" title="Answer"/>
+                                <state key="normal" title="Answer">
+                                    <color key="titleColor" red="0.58039218189999997" green="0.66666668650000005" blue="0.85098040100000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I've felt more irritated or angrier than usual" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n58-x6-khb">
-                                <rect key="frame" x="20" y="284" width="323" height="21"/>
+                                <rect key="frame" x="25" y="246" width="323" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lV5-Pp-Q4d">
-                                <rect key="frame" x="11" y="400" width="132" height="30"/>
+                                <rect key="frame" x="16" y="380" width="132" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <menu key="menu" id="m6K-Rj-FZj">
                                     <children>
@@ -153,17 +138,19 @@
                                         <command title="5: Don't relate" id="4v4-fx-YJq"/>
                                     </children>
                                 </menu>
-                                <state key="normal" title="Answer"/>
+                                <state key="normal" title="Answer">
+                                    <color key="titleColor" red="0.58039218189999997" green="0.66666668650000005" blue="0.85098040100000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I've slept less than usual, but I still have energy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qzW-TU-vhX">
-                                <rect key="frame" x="20" y="371" width="355" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I've slept less than usual, but I still have energy" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qzW-TU-vhX">
+                                <rect key="frame" x="25" y="331" width="342" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p4z-eQ-TqV">
-                                <rect key="frame" x="11" y="495" width="132" height="30"/>
+                                <rect key="frame" x="16" y="475" width="132" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <menu key="menu" id="Bsw-jk-qiE">
                                     <children>
@@ -174,10 +161,12 @@
                                         <command title="5: Don't relate" id="crh-Rm-NCg"/>
                                     </children>
                                 </menu>
-                                <state key="normal" title="Answer"/>
+                                <state key="normal" title="Answer">
+                                    <color key="titleColor" red="0.58039218189999997" green="0.66666668650000005" blue="0.85098040100000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I've had unexplained aches/pains (e.g. head, back, abdomen, etc.)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r5f-Be-4xf">
-                                <rect key="frame" x="20" y="450" width="370" height="48"/>
+                                <rect key="frame" x="25" y="430" width="370" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -186,27 +175,34 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Lg1-cY-Myr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" red="0.58039218189999997" green="0.66666668650000005" blue="0.85098040100000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="Lg1-cY-Myr" firstAttribute="trailing" secondItem="ls9-wu-sLB" secondAttribute="trailing" constant="27" id="Niw-jX-Uz0"/>
                             <constraint firstItem="Lg1-cY-Myr" firstAttribute="bottom" secondItem="ls9-wu-sLB" secondAttribute="bottom" constant="27" id="mJ9-cf-0jn"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="GWy-6W-TGn"/>
+                    <connections>
+                        <outlet property="firstquestion" destination="KLx-EF-J97" id="iCg-Wg-dY9"/>
+                        <outlet property="fourthquestion" destination="p4z-eQ-TqV" id="tk9-qM-aFb"/>
+                        <outlet property="secondquestion" destination="yiK-NR-iTM" id="UAv-fe-mWz"/>
+                        <outlet property="thirdquestion" destination="lV5-Pp-Q4d" id="jI2-Vw-EfU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mFb-dR-NQ9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3684.057971014493" y="138.61607142857142"/>
+            <point key="canvasLocation" x="3684" y="138.0809595202399"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="f1t-AD-gDI">
             <objects>
                 <viewController id="iF4-5v-pKX" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dEu-Ln-vfy">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZM-ZR-HNQ">
-                                <rect key="frame" x="73" y="425" width="269" height="52"/>
+                                <rect key="frame" x="53" y="307" width="269" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain">
@@ -217,6 +213,7 @@
                                             </attributes>
                                         </fragment>
                                     </attributedString>
+                                    <color key="baseForegroundColor" red="0.58039218189999997" green="0.66666668650000005" blue="0.85098040100000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="OiN-qq-5RC" kind="show" id="Wlq-bq-cCx"/>
@@ -238,7 +235,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5Te-6s-IQ2" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1ID-Dr-ASU">
-                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

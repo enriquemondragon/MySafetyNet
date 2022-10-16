@@ -14,8 +14,9 @@
 
 import UIKit
 import TensorFlowLiteTaskText
+import MessageUI
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, MFMessageComposeViewControllerDelegate {
 
   @IBOutlet weak var tableView: UITableView!
   @IBOutlet weak var textField: UITextField!
@@ -63,6 +64,11 @@ class ViewController: UIViewController {
     // Initialize a TextClassification instance
     loadModel()
   }
+    
+    func messageComposeViewController(_ controller: MFMessageComposeViewController, didFinishWith result: MessageComposeResult)
+            {
+                self.dismiss(animated: true, completion: nil)
+            }
 
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
@@ -86,8 +92,23 @@ class ViewController: UIViewController {
     guard let text = textField.text else { return }
       if text.count == 0 { return }
           classify(text: text)
+      
+      //Send message
+      if MFMessageComposeViewController.canSendText(){
+                  let controller = MFMessageComposeViewController()
+                  
+                  controller.body = "Patient filled out today's survey."
+                  controller.recipients = ["8578671947"]
+                  controller.messageComposeDelegate = self
+                  self.present(controller, animated: true, completion: nil)
+              }
+              else
+              {
+                  print("Not working")
+              }
 
   }
+    
     
   /// Classify the text and display the result.
   private func classify(text: String) {
@@ -96,7 +117,7 @@ class ViewController: UIViewController {
     // Run TF Lite inference in a background thread to avoid blocking app UI
     DispatchQueue.global(qos: .userInitiated).async {
         let classifierResults = classifier.classify(text: text)
-        
+        print(classifierResults)
         let result = ClassificationResult(text: text, results: classifierResults)
         self.results.append(result)
 
@@ -105,6 +126,7 @@ class ViewController: UIViewController {
             self.textField.text = nil
             self.tableView.reloadData()
         }
+        
     }
   }
 
@@ -167,3 +189,7 @@ struct ClassificationResult {
   var results: [String: NSNumber]
 
 }
+
+
+
+
