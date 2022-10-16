@@ -11,7 +11,7 @@ If you wish to run it locally you can create a virtual environment and install t
     $ pip install -r requirements_modelmaker.txt
 
 ```
-We trained our model using the [sentiment_tweets3 dataset](https://www.kaggle.com/code/rushinaik/depression-killer/data?select=sentiment_tweets3.csv), which consists of twitter posts labeled with a *depression score*.
+We trained our model using the [Tweet Sentiment Extraction dataset](https://www.kaggle.com/competitions/tweet-sentiment-extraction/data?select=train.csv), which consists of twitter posts labeled as positive, neutral or negative. We took only the text column, as well as the sentiment one, changing the values to numbers from 0 to 1.
 The preprocessed step can be done with the script:
 ```
     $ python3 preprocess.py --input path/to/the/dataset --output output/path/
